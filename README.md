@@ -6,33 +6,15 @@ Ce projet est sous licence CECILL-B (voir [LICENSE.md](LICENSE.md)).
 
 # Modele de données
 
-### Actuellement
-
-![](doc/GPAO_v2.png)
-
-### Dans le futur
-
-Nous étudions une nouvelle approche de la problématique avec un nouveau modèle composée de 5 tables : 
-
-- jobs
-
-- project
-
-- sessions
-
-- jobDependencies
-
-- projectDependencies
-
-![](doc/GPAO_v3.png)
+![](doc/BD_gpao.drawio.png)
 
 ## Architecture en utilisant docker-compose
 
 ![](doc/docker-compose.png)
 
-## Architecture en en utilisant docker swarm
+<!-- ## Architecture en en utilisant docker swarm
 
-ToDo : Faire un jolie schéma
+ToDo : Faire un jolie schéma -->
 
 ## Ouverture des ports
 
