@@ -7,6 +7,21 @@ const dependencies = require('../middlewares/dependencies');
 
 const topBar = require('../middlewares/topBar');
 
+
+// create projects page
+router.get('/create_project/:id', topBar.getInfo, projects.getProjectStatus, (req, res) => {
+  res.render('../plugins/' + req.params.id + '/index', {
+    topBar: req.topBar,
+    jobStatus: req.topBar.jobStatus,
+    projects: req.projectStatus,
+    data: '{}',
+    columns: '{}',
+    api: req.app.get('apiUrl'),
+    server: req.app.get('server'),
+    version: req.app.get('version'),
+  });
+});
+
 // dashboard page
 router.get('/', topBar.getInfo, projects.getProjectStatus, (req, res) => {
   res.render('pages/index', {

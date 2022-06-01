@@ -1,0 +1,5 @@
+{
+    "create_page":"predia",
+    "build_page":"predia_build",
+    "build_command": "docker run -v /var/data/input:/var/data/input predia "
+}

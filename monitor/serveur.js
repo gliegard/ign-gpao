@@ -55,6 +55,8 @@ app.use('/css', express.static(`${__dirname}/resources/css`));
 app.use('/js', express.static(`${__dirname}/resources/js`));
 app.use('/chart.js', express.static(`${__dirname}/node_modules/chart.js`));
 
+// app.set('views', [__dirname + '/views', __dirname + '/plugins']);
+
 // use res.render to load up an ejs view file
 app.use('/', routes);
 debug.log(`URL de l'API : ${app.get('apiUrl')}`);
